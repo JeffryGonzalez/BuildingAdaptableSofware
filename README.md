@@ -1,4 +1,4 @@
-Building Adaptable Sofware
+Building Adaptable Software
 ========================
 
 This repository is created for the students of the Building Adaptable Software with C# course.
