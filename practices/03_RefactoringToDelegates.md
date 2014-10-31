@@ -30,4 +30,4 @@ Current, all but three of the tests pass. The three failing tests are in the `Co
 * Centralize the rounding of the results
 
 ## Getting the Code
-If you download this repo as a zip file, the Solution for this is in the Solutions folder.
+If you download this repo as a zip file, the Solution for this is in the Practices folder.
