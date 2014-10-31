@@ -1,1 +1,3 @@
-# The practice exercises will go here.
+# Practice Exercises
+
+This folder contains the practices exercises.
