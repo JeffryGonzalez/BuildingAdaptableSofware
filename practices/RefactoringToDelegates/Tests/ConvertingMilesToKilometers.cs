@@ -9,21 +9,29 @@ namespace Tests
 		[TestMethod]
 		public void OneMile()
 		{
-			const float miles = 1;
+			const double miles = 1;
 
-			float kilometers = _converter.ConvertMilesToKilometers(miles);
+			double kilometers = _converter.ConvertMilesToKilometers(miles);
 
-			Assert.AreEqual(1.61F, kilometers, .01);
+			Assert.AreEqual(1.61, kilometers, .01);
 		}
 
 		[TestMethod]
 		public void OneAndAHalfMiles()
 		{
-			const float miles = 1.5F;
+			const double miles = 1.5F;
 
-			float kilometers = _converter.ConvertMilesToKilometers(miles);
+			double kilometers = _converter.ConvertMilesToKilometers(miles);
 
 			Assert.AreEqual(2.42, kilometers, .01);
+		}
+
+		[TestMethod]
+		public void LotsOfMiles()
+		{
+			const double miles = 500; // I would walk 500 hundred miles... 
+			var kilometers = _converter.ConvertMilesToKilometers(miles);
+			Assert.AreEqual(805, kilometers);
 		}
 	}
 }

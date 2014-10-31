@@ -8,31 +8,31 @@ namespace Tests
 		[TestMethod]
 		public void OneFoot()
 		{
-			const float feet = 1;
+			const double feet = 1;
 
-			float meters = _converter.ConvertFeetToMeters(feet);
+			double meters = _converter.ConvertFeetToMeters(feet);
 
-			Assert.AreEqual(.31F, meters,.01);
+			Assert.AreEqual(.31, meters,.01);
 		}
 
 		[TestMethod]
 		public void OnePointFiveFeetInMeters()
 		{
-			const float feet = 1.5F;
+			const double feet = 1.5;
 
 			var meters = _converter.ConvertFeetToMeters(feet);
 
-			Assert.AreEqual(0.46F, meters, .01);
+			Assert.AreEqual(0.46, meters, .01);
 		}
 
 		[TestMethod]
 		public void BigFeet() // Ha!
 		{
-			const float feet = 182.3F;
+			const double feet = 182.3F;
 
 			var meters = _converter.ConvertFeetToMeters(feet);
 
-			Assert.AreEqual(55.60F, meters, .01);
+			Assert.AreEqual(55.60, meters, .01);
 		}
 	}
 }

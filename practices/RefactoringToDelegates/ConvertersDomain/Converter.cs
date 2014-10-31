@@ -14,35 +14,35 @@ namespace ConvertersDomain
 			Miles
 		}
 
-		private float Convert(float measure, ImperialUnits unit)
+		private double Convert(double measure, ImperialUnits unit)
 		{
 
 			switch (unit)
 			{
 				case ImperialUnits.Feet:
-					return measure*0.305F;
+					return measure*0.305;
 					break;
 				case ImperialUnits.Inches:
-					return measure*25.4F;
+					return measure*25.4;
 					break;
 				case ImperialUnits.Miles:
-					return measure*1.61F;
+					return measure*1.61;
 				default:
 					throw new ArgumentException();
 			}
 		}
 	
-		public float ConvertInchesToMillimeters(float inches)
+		public double ConvertInchesToMillimeters(double inches)
 		{
 			return Convert(inches, ImperialUnits.Inches);
 		}
 
-		public float ConvertFeetToMeters(float feet)
+		public double ConvertFeetToMeters(double feet)
 		{
 			return Convert(feet, ImperialUnits.Feet);
 		}
 
-		public float ConvertMilesToKilometers(float miles)
+		public double ConvertMilesToKilometers(double miles)
 		{
 			return Convert(miles, ImperialUnits.Miles);
 		}
