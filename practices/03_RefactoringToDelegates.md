@@ -28,3 +28,6 @@ Current, all but three of the tests pass. The three failing tests are in the `Co
 * Remove the enumerated constant
 * Remove the conditional (`switch`) statement
 * Centralize the rounding of the results
+
+## Getting the Code
+If you download this repo as a zip file, the Solution for this is in the Solutions folder.
